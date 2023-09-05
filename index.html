@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="Music Theory Guide"
+      content="An interactive music theory guide with audio."
+    />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="Music Theory Guide" />
+    <meta property="og:title" content="Music Theory Guide" />
+    <meta
+      property="og:description"
+      content="An interactive music theory guide with audio."
+    />
+    <meta property="og:url" content="https://abdullahalhomoud.github.io/music-theory-guide" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:title" content="Music Theory Guide." />
+    <meta
+      property="twitter:description"
+      content="An interactive music theory guide with audio."
+    />
+    <meta
+      property="twitter:url"
+      content="https://abdullahalhomoud.github.io/music-theory-guide"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32-light-mode.png"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16-light-mode.png"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32-dark-mode.png"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16-dark-mode.png"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicons/safari-pinned-tab.svg"
+      color="#1D2837"
+    />
+    <meta name="msapplication-TileColor" content="#1D2837" />
+    <meta name="theme-color" content="#1D2837" />
+    <title>Music Theory Guide</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="piano">
+      <div id="c-3" class="key">C</div>
+      <div id="c-sharp-3" class="key sharp">C&#9839;<br />D&#9837;</div>
+      <div id="d-3" class="key">D</div>
+      <div id="d-sharp-3" class="key sharp">D&#9839;<br />E&#9837;</div>
+      <div id="e-3" class="key">E</div>
+      <div id="f-3" class="key">F</div>
+      <div id="f-sharp-3" class="key sharp">F&#9839;<br />G&#9837;</div>
+      <div id="g-3" class="key">G</div>
+      <div id="g-sharp-3" class="key sharp">G&#9839;<br />A&#9837;</div>
+      <div id="a-3" class="key">A</div>
+      <div id="a-sharp-3" class="key sharp">A&#9839;<br />B&#9837;</div>
+      <div id="b-3" class="key">B</div>
+      <div id="c-4" class="key">C</div>
+      <div id="c-sharp-4" class="key sharp">C&#9839;<br />D&#9837;</div>
+      <div id="d-4" class="key">D</div>
+      <div id="d-sharp-4" class="key sharp">D&#9839;<br />E&#9837;</div>
+      <div id="e-4" class="key">E</div>
+    </div>
+    <div class="content-container">
+      <div class="collapsible-content-title">
+        Welcome
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="collapsible-content collapsible-content-hidden">
+        <p>
+          Hi! My name is Abdullah. I’m a web designer and developer, and I am
+          passionate about music and music theory. I wrote and built this
+          interactive guide to make learning music theory fun and engaging. The
+          keyboard at the top is playable. You can use your mouse, keyboard, or
+          touchscreen to press the keys. You can also click any
+          <b>(Listen)</b> button in the guide and the keyboard will play the
+          associated notes.
+        </p>
+        <p>
+          If you’d like to learn more about me, or learn how to code for
+          yourself, please visit
+          <a class="hover-effect" href="https://abdullahcodes.io" target="_blank">abdullahcodes.io</a
+          >, where you can also contact me if you’d like me to develop a cool
+          idea that you have. You can follow me on
+          <a class="hover-effect" href="https://instagram.com/abdullahcodes.io" target="_blank"
+            >Instagram</a
+          >
+          or
+          <a class="hover-effect" href="https://github.com/abdullahalhomoud" target="_blank"
+            >GitHub</a
+          >
+          to stay in touch.
+        </p>
+        <p>
+          If you like using this guide, please
+          <a class="hover-effect" href="https://ko-fi.com/abdullahcodes" target="_blank"
+            >support me</a
+          >
+          on Ko-fi. As an independent designer and developer, your support
+          allows me to keep building cool tools like this one.
+        </p>
+      </div>
+
+      <div class="collapsible-content-title">
+        I. Notes
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="collapsible-content collapsible-content-hidden">
+        <p>
+          Look at the piano above. You’ll see that the white keys are labelled
+          C, D, E, F, G, A, B, and then go back to C. Most of the white keys
+          also have black keys between them. There are, in total, 12 keys that
+          repeat. Note that there is no black key between B and C, or between E
+          and F.
+        </p>
+
+        <p>
+          Each black note actually has two names. The note between C and D is
+          called C sharp or D flat. (‘Sharp’ in music notation is written as
+          &#9839;, and ‘flat’ is written as &#9837;). The word ‘sharp’ means
+          that you go up one note, so one note up from C is C♯, one note up from
+          D is D♯, etc. The word ‘flat’ means that you go down one note, so one
+          note down from B is B&#9837;, one note down from D is D&#9837;, etc.
+          We say that A♯ and B&#9837; are enharmonic notes, because they’re
+          actually the same note with different names—in other words, A♯ and
+          B&#9837; make the exact same sound.
+        </p>
+      </div>
+
+      <div class="collapsible-content-title">
+        II. Intervals
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="collapsible-content collapsible-content-hidden">
+        <p>
+          The distance between two notes is called an interval. The smallest
+          possible interval is between two notes that are right next to each
+          other. This interval is called a semitone, which is also known as a
+          half step. For example, the distance between C and C♯ is a semitone,
+          as is the distance between C♯ and D.
+        </p>
+
+        <p>
+          The distance of two semitones is called a tone, which is also known as
+          a full step. For example, the distance between C and D is a tone.
+        </p>
+        <p>Each interval size has its own name:</p>
+        <ul>
+          <li>
+            An interval of 1 semitone is called a minor second.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+          <li>
+            An interval of 2 semitones is called a major second.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+          <li>
+            An interval of 3 semitones is called a minor third.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+          <li>
+            An interval of 4 semitones is called a major third.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+          <li>
+            An interval of 5 semitones is called a perfect fourth.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+          <li>
+            An interval of 6 semitones is called an augmented fourth or a
+            diminished fifth.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+          <li>
+            An interval of 7 semitones is called a perfect fifth.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+          <li>
+            An interval of 8 semitones is called a minor sixth.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+          <li>
+            An interval of 9 semitones is called a major sixth.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+          <li>
+            An interval of 10 semitones is called a minor seventh.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+          <li>
+            An interval of 11 semitones is called a major seventh.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+          <li>
+            An interval of 12 semitones is called an octave.
+            <span class="play-interval hover-effect">(Listen)</span>
+          </li>
+        </ul>
+      </div>
+      <div class="collapsible-content-title">
+        III. The Major Scale
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="collapsible-content collapsible-content-hidden">
+        <p>
+          Scales are made up of a specific formula of semitones and tones. The
+          major scale, which is the most important scale in Western music, has
+          the following formula:
+        </p>
+        <div class="formula">
+          tone - tone - semitone - tone - tone - tone - semitone
+        </div>
+
+        <p>So, to play the C major scale&#8230;</p>
+        <ul>
+          <li>
+            You start from C, then go one tone (i.e. two semitones) up, which
+            means that you skip C&#9839; and play D.
+          </li>
+          <li>Then you go another tone up and play E.</li>
+          <li>
+            Then you go one semitone up and play F (remember that there’s no
+            note between E and F, so they’re only a semitone apart).
+          </li>
+          <li>Then you go one tone up and play G.</li>
+          <li>Then you go one tone up and play A.</li>
+          <li>Then you go one tone up and play B.</li>
+          <li>
+            Then you go one semitone up and play the C that’s an octave higher
+            from the first C.
+          </li>
+        </ul>
+
+        So the C major scale is C D E F G A B C.
+        <span class="play-scale hover-effect">(Listen)</span>
+
+        <p>
+          You can start on any note and play the major scale of that note using
+          the same formula. So, for example, if you want to play the D major
+          scale, you follow the same formula and get D E F♯ G A B C♯ D.
+          <span class="play-scale hover-effect">(Listen)</span>
+        </p>
+      </div>
+      <div class="collapsible-content-title">
+        IV. The Minor Scale
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="collapsible-content collapsible-content-hidden">
+        <p>
+          Each major scale has a relative minor scale. What this means is that
+          each major scale has a minor scale with the exact same notes. The only
+          difference is that the minor scale starts on the sixth note of the
+          major scale. For example, to get the relative minor scale of the C
+          major scale, you start on the sixth note of C major, which is A. So we
+          say that the A minor scale is the relative minor scale of the C major
+          scale.
+        </p>
+        <p>
+          This also means that the minor scale has its own formula, which is
+          actually just the formula of the major scale but rearranged so that
+          you start on the sixth note. This formula is the following:
+        </p>
+        <div class="formula">
+          tone - semitone - tone - tone - semitone - tone - tone
+        </div>
+        <p>
+          Notice how this is actually just a rearrangement of the major scale.
+          If you start from the second to last note in the major scale formula
+          then circle back to the beginning, you get the formula for the minor
+          scale.
+        </p>
+        <p>
+          The minor scale is called minor because it has a minor third (its
+          third note is three semitones away from its first note). The major
+          scale, on the other hand, has a major third (its third note is four
+          semitones away from its first note).
+        </p>
+      </div>
+      <div class="collapsible-content-title">
+        V. Chords
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="collapsible-content collapsible-content-hidden">
+        <p>
+          A chord is a group of three or more notes that are played together.
+          You get the notes of each chord from the scale that it comes from. For
+          example, the notes of the C major chord are derived from the C major
+          scale. What you do is play a note and skip a note. So to get the C
+          major chord, you play C (the first note), skip the D, play the E (the
+          third note), skip the F, and play the G (the fifth note). This means
+          that the C major chord is made up of the notes C - E - G.
+          <span id="play-c-major-chord" class="play-chord hover-effect"
+            >(Listen)</span
+          >
+        </p>
+        <p>
+          You do the same for all notes. So, for example, if you play the first,
+          third, and fifth notes of the D minor scale, you get the D minor
+          chord, which is D - F - A.
+          <span id="play-d-minor-chord" class="play-chord hover-effect"
+            >(Listen)</span
+          >
+        </p>
+        <p>
+          Each scale has a collection of chords. For example, because all the
+          notes in the D minor chord are also in the C major scale, the D minor
+          chord is actually also in the C major scale. On the other hand, the D
+          major chord is not in the C major scale, because the D major chord has
+          F&#9839;, which is not in the C major scale.
+        </p>
+        <p>
+          The difference between a major chord and a minor chord is that the
+          second note in the chord is one semitone higher in the major chord. In
+          other words, the first and third notes in a major scale are 4
+          semitones—i.e. a major third—apart, and the first and third notes in a
+          minor chord are 3 semitones—i.e. a minor third—apart.
+        </p>
+        <p>
+          To understand why this is, look at the formula for the major scale and
+          compare it to the formula for the minor scale. When we follow the
+          formula for the major scale starting from D, we get D - E - F&#9839; -
+          G - A - B - C&#9839; - D. So the first, third, and fifth notes are D -
+          F&#9839; - A. This is the D major chord. However, when we follow the
+          formula for the minor scale starting from D, we get D - E - F - G - A
+          - B&#9837; - C - D. So the first, third, and fifth notes are D - F -
+          A. This is the D minor chord.
+        </p>
+        <p>
+          Just like there’s a formula for the notes on each scale, there’s also
+          a formula for the chords in each scale. The formula for the chords in
+          the major scale is the following:
+        </p>
+        <div class="formula">
+          major - minor - minor - major - major - minor - diminished
+        </div>
+        <p>This is also written as the following:</p>
+        <div class="formula">I - ii - iii - IV - V - vi - vii&deg;</div>
+        <p>
+          (The capital Roman numerals are major chords. The small Roman numerals
+          are minor chords. The seventh chord has a little O symbol, signifying
+          that it’s a diminished chord.)
+        </p>
+        <p>
+          So, for example, in the C major scale, we have the following chords:
+        </p>
+        <p>
+          I: C major<br />
+
+          ii: D minor<br />
+
+          iii: E minor<br />
+
+          IV: F major<br />
+
+          V: G major<br />
+
+          vi: A minor<br />
+
+          vii&deg;: B diminished
+        </p>
+        <p>Okay, but hold on just a second! What’s a diminished chord?</p>
+        <p>
+          We saw that a major chord is made up of the first, third, and fifth
+          notes in the major scale. This means that the first and second notes
+          in the chord are 4 semitones (a major third) apart, and the second and
+          third notes are 3 semitones (a minor third) apart. We also saw that
+          the minor chord is made up of the first, third, and fifth notes in the
+          minor scale. This means that the first and second notes in the chord
+          are 3 semitones (a minor third) apart, and the second and third notes
+          in the chord are 4 semitones (a major third) apart.
+        </p>
+        <p></p>
+        <p>Notice the formula here:</p>
+        <div class="formula">Major chord = major third + minor third</div>
+        <div class="formula">Minor chord = minor third + major third</div>
+        <p>
+          However, if you look at the last chord in the major scale, you will
+          see that it doesn’t follow either of these formulas. For example, in
+          the C major scale, the last note is B. To play the B chord, you have
+          to play B, skip a note, play D, skip a note, play F. So this chord is
+          B - D - F. If you look at the interval between each of the two notes,
+          you will see that it has the following formula:
+        </p>
+        <div class="formula">minor third + minor third</div>
+        <p>
+          So the interval between the first and second notes is a minor third,
+          like the one in a minor chord. But unlike in a minor chord, the
+          interval between the second and third notes is also a minor third.
+          This is called a diminished chord, because the total distance between
+          the first and third notes is smaller.
+        </p>
+        <p>
+          As you might have guessed, the chords in the major scale are also in
+          the relative minor scale but starting from the sixth chord. For
+          example, because the A minor scale is the same scale as the C major
+          scale but starting from the sixth note, the A minor scale has the same
+          chords as the C major scale but starting from the sixth note. In other
+          words, the vi chord in the C major scale is the i chord in the A minor
+          scale.
+        </p>
+
+        <p>The following are the chords in the A minor scale:</p>
+        <p>
+          i: A minor<br />
+
+          ii&deg;: B diminished<br />
+
+          III: C major<br />
+
+          iv: D minor<br />
+
+          v: E minor<br />
+
+          VI: F major<br />
+
+          VII: G major
+        </p>
+      </div>
+      <div class="collapsible-content-title">
+        VI. The Circle Of Fifths
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="collapsible-content collapsible-content-hidden">
+        <img
+          class="circle-of-fifths"
+          src="images/circle-of-fifths.png"
+          alt="an image of the circle of fifths."
+        />
+        <p>
+          The circle of fifths is a very useful tool that shows how the scales
+          and chords connect with each other.
+        </p>
+        <p>
+          Look at how the notes in the circle relate to each other: If you go
+          clockwise, each note is a perfect fifth (7 semitones) away from the
+          one before it. For example, G is a perfect fifth away from C, and D is
+          a perfect fifth away from G. This is why it’s called the circle of
+          fifths.
+        </p>
+        <p>
+          One of the magic uses of the circle of fifths is that if you play a
+          major scale, then go to its fifth, and play the major scale of that
+          note, all you have to do is add one sharp note. For example, we know
+          that the C major scale is C - D - E - F -G -A -B - C. If we go to the
+          fifth of this scale, we get G. So if we want to play the G major
+          scale, all we have to do is add one sharp note. So every time we go
+          one note clockwise on the circle, we have to add one sharp note.
+        </p>
+        <p>
+          The circle of fifths also shows us <i>which</i> note is sharpened. All
+          we have to do is go two notes anticlockwise. So for G major, we go two
+          notes anticlockwise in the circle and get F. This means that the G
+          major scale has a sharpened F: G - A - B - C - D - E - F&#9839; - G.
+        </p>
+        <p>
+          Then we can go to the fifth of the G major scale and play D. If we
+          want to play the D major scale, all we have to do is add another sharp
+          note. To figure out which sharp note to add, we go two notes
+          anticlockwise in the circle and get C. This means that the D major
+          scale also has a sharpened C: D - E - F&#9839; - G - A - B - C&#9839;
+          - D.
+        </p>
+        <p>This goes on continuously till all notes in the scale are sharp.</p>
+        <p>
+          We can also go anticlockwise from the top to figure out the scales
+          that have flat notes. To know which note is flattened, we have to go
+          to the note on the opposite end (six notes clockwise or six notes
+          anticlockwise). For example, if we start from the top, we have C,
+          which we know has no flats. The note next to C when we go
+          anticlockwise is F. This means that the F major scale has one flat. To
+          know which note is the flattened one, we go to the note that’s on the
+          opposite end of F. This means that the the F major scale has a
+          flattened B, which means that the F major scale has the following
+          notes: F - G - A - B&#9837; - C - D -E -F.
+        </p>
+        <p>
+          If we move one more note anticlockwise from F, we get B&#9837;. This
+          means that the B&#9837; major scale has two flat notes. So we add the
+          flat that’s already in the F major scale (which is B&#9837;) then go
+          six notes clockwise or anticlockwise to find out which other note is
+          flattened. So we see that B&#9837; also has a flattened E, which means
+          that the B&#9837; major scale has the following notes: B&#9837; - C -
+          D - E&#9837; - F - G - A - B&#9837;.
+        </p>
+        <p>This goes on continuously till all notes in the scale are flat.</p>
+        <p>
+          What all of this means in practice is that you can use the circle of
+          fifths to change the scale that you’re playing. If you change from a
+          scale to one right next to it in the circle, the change will be
+          subtle, because there will only be one note difference. However, if
+          you go from a scale to one further away, you can create a more drastic
+          change in the music. It can create a dip or rise in the energy or the
+          mood.
+        </p>
+      </div>
+      <div class="collapsible-content-title">
+        VII. The Modes
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="collapsible-content collapsible-content-hidden">
+        <p>
+          Just as you can play the same notes of the major scale starting from
+          the sixth note and get the minor scale, you can also start from any
+          other note and get a different scale depending on which note you start
+          from. These scales are called the modes.
+        </p>
+        <p>
+          When you play the major scale starting from the second note, you get
+          the Dorian mode. The relative Dorian of C major is D Dorian. You start
+          from D and play the exact same notes as the notes in C major: D - E -F
+          - G -A - B - C - D.
+        </p>
+        <p>
+          When you play the major scale starting from the third note, you get
+          the Phrygian mode. The relative Phrygian mode of C major is E
+          Phrygian. You start from E and play the exact same notes as the notes
+          in C major.
+        </p>
+        <p>
+          Starting from the fourth note, you get the Lydian mode. The relative
+          Lydian mode of C major is F Lydian.
+        </p>
+        <p>
+          Starting from the fifth note, you get the Mixolydian mode. The
+          relative Mixolydian mode of C major is G Mixolydian.
+        </p>
+        <p>
+          Starting from the sixth note, you get the Aeolian mode. The relative
+          Aeolian of C major is A Aeolian. This is actually just another name
+          for the minor scale.
+        </p>
+        <p>
+          Starting from the seventh note, you get the Locrian mode. The relative
+          Locrian mode of C major is B Locrian.
+        </p>
+        <p>
+          The major scale itself is also called the Ionian mode. So C major is
+          also called C Ionian.
+        </p>
+        <p>
+          The modes are categorized into major or minor modes depending on
+          whether the distance between the first and third note is a major third
+          or a minor third. The major modes are the Ionian (aka the major
+          scale), Lydian, and Mixolydian modes. The minor modes are the Aeolian
+          (aka the minor scale), Dorian, Phrygian, and Locrian modes.
+        </p>
+      </div>
+      <div class="collapsible-content-title">
+        VIII. Suspended Chords
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="collapsible-content collapsible-content-hidden">
+        <p>
+          We saw earlier that we can make a chord by playing the first, third,
+          and fifth note of a scale. For example, the C major chord is made up
+          of the first, third, and fifth note of the C major chord, which are C
+          - E - G. We can remove the third note (in this case, the E), and
+          replace it with either the second or the fourth note of the scale.
+          This would give us a suspended chord. For example, if we play C - D -
+          G, we would get a C suspended second (Csus2) chord, because we would
+          be replacing the third (E) with the second (D). If we play C - F - G,
+          we would get a C suspended fourth (Csus4) chord, because we would be
+          replacing the third with the fourth (F).
+        </p>
+
+        <p>
+          Suspended chords can act as transition chords. For example, if we want
+          to go from D minor (D - F -A) to C major (C - E - G), we can play a
+          Csus4 (C - F - G). This allows us to “suspend” the F in D minor by
+          continuing to play it in Csus4, and then we resolve it down to E in C
+          major: D - F - A → C - F - G → C - E - G.
+          <span
+            id="play-suspended-chord-progression"
+            class="play-chord hover-effect"
+            >(Listen)</span
+          >
+        </p>
+      </div>
+      <div class="collapsible-content-title">
+        IX. Seventh Chords
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="collapsible-content collapsible-content-hidden">
+        <p>
+          If you play the first, third, and fifth note of a scale, then also add
+          the seventh note, you get a seventh chord. And just as with triads
+          (note: a three-note chord is called a ‘triad’), seventh chords have
+          different names depending on the intervals between them.
+        </p>
+
+        <p>
+          If you play a minor chord and add a note that’s a minor third higher
+          than the fifth, you get a minor seventh chord. For example, if you
+          play C - E&#9837; - G (C minor chord) and add B&#9837; (which is a
+          minor third away from G), you get the C minor seventh (Cmin7) chord.
+          Another way to look at this is to say that B&#9837; is a minor seventh
+          away from C.
+        </p>
+        <p>
+          If you play a major chord and add a note that’s a major third higher
+          than the fifth, you get a major seventh chord. For example, if you
+          play C - E - G (C major chord) and add B (which is a major third away
+          from G), you get the C major seventh (Cmaj7) chord. Another way to
+          look at this is to say that B is a major seventh away from C.
+        </p>
+        <p>
+          If you play a minor chord and add a note that’s a major third higher
+          than the fifth (i.e. major seventh from the first note), you get a
+          minor major seventh (minMaj7) chord. For example, if you play C -
+          E&#9837; - G, and add B, you get the C minor major seventh (CminMaj7)
+          chord.
+        </p>
+        <p>
+          If you play a major chord and add a note that’s a minor third higher
+          than the fifth (i.e. minor seventh from the first note), you get a
+          major-minor seventh (majMin7) chord. For example, if you play C - E -
+          G, and add B&#9837;, you get the C major-minor seventh (CMajmin7)
+          chord. A major-minor seventh chord is also called a dominant seventh
+          chord. This chord is written with just the number 7. For example, C
+          dominant seventh is written as C7.
+        </p>
+        <p>
+          Note that the dominant chord is the name of the fifth chord in a
+          scale. For example, in the C major scale, G major is called the
+          dominant chord. The dominant seventh chord is what you get when you
+          play this chord plus a minor seventh from G. It’s the only possible
+          major-minor seventh chord in the scale. If you play any of the two
+          other major chords in the scale (C and F) with a minor seventh, you
+          would go out of the scale. C7 has the notes C - E - G - B&#9837; (as
+          we saw above), and B&#9837; is not in the C major scale. F7 has the
+          notes F - A - C - E&#9839;, and E&#9839; is not in the C major scale.
+          In other words, the only possible major-minor seventh chord in a major
+          scale comes from the dominant chord. This is why it’s called the
+          dominant seventh chord.
+        </p>
+      </div>
+      <div class="collapsible-content-title">
+        X. Chord Inversions
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="collapsible-content collapsible-content-hidden">
+        <p>
+          You can play the notes in a chord in any order and still have the same
+          chord. For example, you can play C major as C - E - G or E - C - G or
+          G - C - E. These are called inversions, because you’re inverting the
+          order of the notes in the chord.
+        </p>
+
+        <ul>
+          <li>
+            When you play a chord in its original order, it’s called the root
+            position.
+          </li>
+
+          <li>
+            When you play the chord with the third as the lowest note, it’s
+            called the first inversion.
+          </li>
+
+          <li>
+            When you play the chord with the fifth as the lowest note, it’s
+            called the second inversion.
+          </li>
+        </ul>
+        <p>
+          Chord inversions can make music sound smoother, as they can reduce
+          movement between the notes across the chords. For example, if you want
+          to play C major followed by F major, if you play C major in the root
+          position (C - E - G), then F major in the second inversion (C - F -
+          A), you don’t have to move the C note, have to move only one note up
+          from E to F, and two notes up from G to A.
+          <span
+            id="play-inverted-chord-progression"
+            class="play-chord hover-effect"
+            >(Listen)</span
+          >
+          On the other hand, if you play both chords in their root position, you
+          have to move all notes five notes up: C to F, E to A, and G to C.
+          <span
+            id="play-uninverted-chord-progression"
+            class="play-chord hover-effect"
+            >(Listen)</span
+          >
+        </p>
+      </div>
+      <a
+        class="kofi-button"
+        href="https://ko-fi.com/abdullahcodes"
+        target="_blank"
+        ><img
+          class="kofi-image"
+          src="images/kofi-image.png"
+          alt="kofi image"
+        /><span id="kofi-button-text">Support me on Ko-fi</span></a
+      >
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
