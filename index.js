@@ -2,11 +2,11 @@
 var buttonsWithHoverEffect = document.querySelectorAll(".hover-effect");
 buttonsWithHoverEffect.forEach((buttonWithHoverEffect) => {
   buttonWithHoverEffect.addEventListener("mouseover", hoverButton);
-  buttonWithHoverEffect.addEventListener("mouseout", unHoverButton);
+  buttonWithHoverEffect.addEventListener("mouseout", unhoverButton);
   buttonWithHoverEffect.addEventListener("touchstart", hoverButton);
   buttonWithHoverEffect.addEventListener("touchend", () => {
     setTimeout(function () {
-      unHoverButton();
+      unhoverButton();
     }, 100);
   });
 
@@ -14,7 +14,7 @@ buttonsWithHoverEffect.forEach((buttonWithHoverEffect) => {
     buttonWithHoverEffect.classList.add("active");
   }
 
-  function unHoverButton() {
+  function unhoverButton() {
     buttonWithHoverEffect.classList.remove("active");
   }
 });
