@@ -1,4 +1,4 @@
-// Add hover effects for buttons
+// Add hover effects to buttons
 var buttonsWithHoverEffect = document.querySelectorAll(".hover-effect");
 buttonsWithHoverEffect.forEach((buttonWithHoverEffect) => {
   buttonWithHoverEffect.addEventListener("mouseover", hoverButton);
