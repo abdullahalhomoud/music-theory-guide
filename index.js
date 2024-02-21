@@ -1,5 +1,5 @@
 // Add hover effects to buttons
-var buttonsWithHoverEffect = document.querySelectorAll(".hover-effect");
+const buttonsWithHoverEffect = document.querySelectorAll(".hover-effect");
 buttonsWithHoverEffect.forEach((buttonWithHoverEffect) => {
   buttonWithHoverEffect.addEventListener("mouseover", hoverButton);
   buttonWithHoverEffect.addEventListener("mouseout", unhoverButton);
@@ -20,15 +20,17 @@ buttonsWithHoverEffect.forEach((buttonWithHoverEffect) => {
 });
 
 // Toggle Collapsible Content
-var collapsibleTitle = document.querySelectorAll(".collapsible-content-title");
-var numberOfCollapsibleTitles = collapsibleTitle.length;
-var plusIcon = document.querySelectorAll(".plus-icon");
-var verticalLine = document.querySelectorAll(".vertical-line");
-var horizontalLine = document.querySelectorAll(".horizontal-line");
+const collapsibleTitle = document.querySelectorAll(
+  ".collapsible-content-title"
+);
+const numberOfCollapsibleTitles = collapsibleTitle.length;
+const plusIcon = document.querySelectorAll(".plus-icon");
+const verticalLine = document.querySelectorAll(".vertical-line");
+const horizontalLine = document.querySelectorAll(".horizontal-line");
 
 for (let i = 0; i < numberOfCollapsibleTitles; i++) {
   collapsibleTitle[i].addEventListener("click", function () {
-    var collapsibleContent = this.nextElementSibling;
+    const collapsibleContent = this.nextElementSibling;
     if (!collapsibleContent.classList.contains("collapsible-content-hidden")) {
       verticalLine[i].classList.remove("vertical-line-rotate");
       horizontalLine[i].classList.remove("horizontal-line-rotate");
@@ -1156,7 +1158,7 @@ function releaseE4() {
 // Play Intervals
 
 // Play minor second
-var playMinorSecond = document.querySelectorAll(".play-interval")[0];
+const playMinorSecond = document.querySelectorAll(".play-interval")[0];
 playMinorSecond.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1183,7 +1185,7 @@ playMinorSecond.addEventListener("click", function () {
 });
 
 // Play second major
-var playMajorSecond = document.querySelectorAll(".play-interval")[1];
+const playMajorSecond = document.querySelectorAll(".play-interval")[1];
 playMajorSecond.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1210,7 +1212,7 @@ playMajorSecond.addEventListener("click", function () {
 });
 
 // Play minor third
-var playMinorThird = document.querySelectorAll(".play-interval")[2];
+const playMinorThird = document.querySelectorAll(".play-interval")[2];
 playMinorThird.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1237,7 +1239,7 @@ playMinorThird.addEventListener("click", function () {
 });
 
 // Play major third
-var playMajorThird = document.querySelectorAll(".play-interval")[3];
+const playMajorThird = document.querySelectorAll(".play-interval")[3];
 playMajorThird.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1264,7 +1266,7 @@ playMajorThird.addEventListener("click", function () {
 });
 
 // Play perfect fourth
-var playPerfectFourth = document.querySelectorAll(".play-interval")[4];
+const playPerfectFourth = document.querySelectorAll(".play-interval")[4];
 playPerfectFourth.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1291,7 +1293,7 @@ playPerfectFourth.addEventListener("click", function () {
 });
 
 // Play diminished fifth
-var playDiminishedFifth = document.querySelectorAll(".play-interval")[5];
+const playDiminishedFifth = document.querySelectorAll(".play-interval")[5];
 playDiminishedFifth.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1318,7 +1320,7 @@ playDiminishedFifth.addEventListener("click", function () {
 });
 
 // Play perfect fifth
-var playPerfectFifth = document.querySelectorAll(".play-interval")[6];
+const playPerfectFifth = document.querySelectorAll(".play-interval")[6];
 playPerfectFifth.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1345,7 +1347,7 @@ playPerfectFifth.addEventListener("click", function () {
 });
 
 // Play minor sixth
-var playMinorSixth = document.querySelectorAll(".play-interval")[7];
+const playMinorSixth = document.querySelectorAll(".play-interval")[7];
 playMinorSixth.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1372,7 +1374,7 @@ playMinorSixth.addEventListener("click", function () {
 });
 
 // Play major sixth
-var playMajorSixth = document.querySelectorAll(".play-interval")[8];
+const playMajorSixth = document.querySelectorAll(".play-interval")[8];
 playMajorSixth.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1399,7 +1401,7 @@ playMajorSixth.addEventListener("click", function () {
 });
 
 // Play minor seventh
-var playMinorSeventh = document.querySelectorAll(".play-interval")[9];
+const playMinorSeventh = document.querySelectorAll(".play-interval")[9];
 playMinorSeventh.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1426,7 +1428,7 @@ playMinorSeventh.addEventListener("click", function () {
 });
 
 // Play major seventh
-var playMajorSeventh = document.querySelectorAll(".play-interval")[10];
+const playMajorSeventh = document.querySelectorAll(".play-interval")[10];
 playMajorSeventh.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1453,7 +1455,7 @@ playMajorSeventh.addEventListener("click", function () {
 });
 
 // Play octave
-var playOctave = document.querySelectorAll(".play-interval")[11];
+const playOctave = document.querySelectorAll(".play-interval")[11];
 playOctave.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1482,7 +1484,7 @@ playOctave.addEventListener("click", function () {
 // Play scales
 
 // Play C major scale
-var playCMajorScale = document.querySelectorAll(".play-scale")[0];
+const playCMajorScale = document.querySelectorAll(".play-scale")[0];
 playCMajorScale.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1584,7 +1586,7 @@ playCMajorScale.addEventListener("click", function () {
 });
 
 // Play D major scale
-var playDMajorScale = document.querySelectorAll(".play-scale")[1];
+const playDMajorScale = document.querySelectorAll(".play-scale")[1];
 playDMajorScale.addEventListener("click", function () {
   loadAudio(d3Url)
     .then((d3AudioBuffer) => {
@@ -1688,7 +1690,7 @@ playDMajorScale.addEventListener("click", function () {
 // Play chords
 
 // Play C major chord
-var playCMajorChord = document.querySelectorAll(".play-chord")[0];
+const playCMajorChord = document.querySelectorAll(".play-chord")[0];
 playCMajorChord.addEventListener("click", function () {
   loadAudio(c3Url)
     .then((c3AudioBuffer) => {
@@ -1744,7 +1746,7 @@ playCMajorChord.addEventListener("click", function () {
 });
 
 // Play D minor chord
-var playDMinorChord = document.querySelectorAll(".play-chord")[1];
+const playDMinorChord = document.querySelectorAll(".play-chord")[1];
 playDMinorChord.addEventListener("click", function () {
   loadAudio(d3Url)
     .then((d3AudioBuffer) => {
@@ -1800,7 +1802,7 @@ playDMinorChord.addEventListener("click", function () {
 });
 
 // Play suspended chord progression
-var playSuspendedChordProgression = document.querySelector(
+const playSuspendedChordProgression = document.querySelector(
   "#play-suspended-chord-progression"
 );
 playSuspendedChordProgression.addEventListener("click", function () {
@@ -1865,7 +1867,7 @@ playSuspendedChordProgression.addEventListener("click", function () {
 });
 
 // Play inverted chord progression
-var playInvertedChordProgression = document.querySelector(
+const playInvertedChordProgression = document.querySelector(
   "#play-inverted-chord-progression"
 );
 playInvertedChordProgression.addEventListener("click", function () {
@@ -1908,7 +1910,7 @@ playInvertedChordProgression.addEventListener("click", function () {
 });
 
 // Play uninverted chord progression
-var playUninvertedChordProgression = document.querySelector(
+const playUninvertedChordProgression = document.querySelector(
   "#play-uninverted-chord-progression"
 );
 playUninvertedChordProgression.addEventListener("click", function () {
