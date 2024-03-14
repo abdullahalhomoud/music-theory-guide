@@ -37,14 +37,14 @@ for (let i = 0; i < numberOfCollapsibleTitles; i++) {
       collapsibleContent.classList.add("collapsible-content-hidden");
       setTimeout(function () {
         collapsibleContent.classList.remove("collapsible-content-animation");
-      });
+      }, 100);
     } else {
       collapsibleContent.classList.remove("collapsible-content-hidden");
       verticalLine[i].classList.add("vertical-line-rotate");
       horizontalLine[i].classList.add("horizontal-line-rotate");
       setTimeout(function () {
         collapsibleContent.classList.add("collapsible-content-animation");
-      });
+      }, 100);
     }
   });
 }
